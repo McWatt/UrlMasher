@@ -1,0 +1,43 @@
+/* ==|== media queries ======================================================
+	PLACEHOLDER Media Queries for Responsive Design.
+	These override the primary ('mobile first') styles
+	Modify as content requires.
+	========================================================================== */
+
+@media only screen and (min-width: 480px) {
+	/* Style adjustments for viewports 480px and over go here */
+}
+
+@media only screen and (min-width: 768px) {
+	/* Style adjustments for viewports 768px and over go here */
+	body{
+		padding:2em;
+	}
+	.chunk{
+		margin:1em;
+		padding:1em;
+		background-color: #eee;
+		@include border-radius(4px);
+	}
+	
+	#main > section{
+		width:49%;
+		float:left;
+		padding:1em;
+		margin:0;
+		&:first-child{
+			margin-right:1%;
+		}
+		&:last-child{
+			margin-left:1%;
+		}
+		.ie7 &{
+		    padding:1%;
+		    width:47.3%;
+		}
+		.ie8 &{
+		    padding:1%;
+		    width:49.5%;
+		}
+	}
+}

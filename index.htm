@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>UrlMasher - mash-up urls for multi-site testing!</title>
+	<meta name="description" content="Create custom urls for multi-site testing on various environments and various pages.">
+	<meta name="author" content="http://www.erikphipps.com">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/screen.css">
+	<link href='http://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css'>
+
+	<script src="js/libs/modernizr-yepnope-2.0.6.js"></script>
+	
+</head>
+
+<body>
+
+<div id="container">
+	<header>
+		<h1>UrlMasher</h1>
+		<p class="tagline">Creates urls for quickly testing multiple domains built on a common code base. <button type="">Read all about it!</button></p>
+	</header>
+	<div id="main" role="main" class="clearfix">
+
+<section id="sectionHelp">
+<h2>About</h2>
+	<h3>Usage:</h3>
+	<ol>
+		<li>Enter your url domain, subdomain and/or path.</li>
+		<li>Mash them up!</li>
+		<li>Control-click the links.</li>
+		<li>Enjoy your new tabs!</li>
+	</ol>
+	<h3>Under the hood:</h3>
+	<ul>
+		<li><a title="LABjs" href="http://labjs.com/">LABjs</a> script loader.</li>
+		<li><a title="jQuery" href="http://jquery.com/">jQuery</a>.</li>
+		<li><a title="Modernizr" href="http://www.modernizr.com/">Modernizr/Yepnope</a>.</li>
+		<li><a title="Google Webfonts" href="http://www.google.com/webfonts">Google Webfonts</a>.</li>
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>LocalStorage</li>
+		<li>CSS managed by Compass</li>
+	</ul>
+	<h3>To do:</h3>
+	<ul>
+		<li>Refactor localStorage mechanisms (not very DRY).</li>
+		<li>Delete hotspot on mobile too small.</li>
+		<li>Add some exciting help copy.</li>
+	</ul>
+</section>
+
+<section id="domainMasher">
+	<header>
+		<h1>Build links:</h1>
+	</header>
+	<div id="domainInputCont" class="chunk">
+		<label for="domainInput">Domain: </label><input id="domainInput" class="part-input" type="text" data-validation-error="Please enter a valid domain in this format: 'google.com'" pattern="^\S*\.\S*$" placeholder="google.com" autofocus required />&nbsp;<button id="domainInputButton" type="button">Add!</button>
+		<div class="parts parts-multiple required"></div>
+	</div>
+	
+	<div id="subDomainInputCont" class="chunk">
+		<label for="subDomainInput">Subdomain: </label><input id="subDomainInput" class="part-input" type="text" data-validation-error="Please enter a valid subdomain in this format: 'www'" pattern="^[A-Za-z0-9]+$" placeholder="www" required />&nbsp;<button id="subDomainInputButton" type="button">Add!</button>
+		<div class="parts parts-single required"></div>
+	</div>
+	
+	<div id="pathInputCont" class="chunk">
+		<label for="pathInput">Path: /</label><input id="pathInput" class="part-input" type="text"data-validation-error="Please enter a path." pattern="^(?=\s*\S).*$" placeholder="reader" />&nbsp;<button id="pathInputButton" type="button">Add!</button>
+		<div class="parts parts-single"></div>
+	</div>
+	<div class="chunk">
+		<button type="button" id="domainMasherUpdate">Mash 'em up!</button>
+	</div>
+</section>
+
+<section id="domainMasherView">
+	<header>
+		<h1>Mashed links:</h1>
+	</header>
+	<ul>
+	    <li class="dummy-links">Your links will appear here!</li>
+    </ul>
+</section>
+
+</div> <!-- end of content -->
+
+<footer>
+	<p>Created by <a href="http://www.erikphipps.com">Erik Phipps</a>.</p>
+</footer>
+
+</div> <!--! end of #container -->
+
+<script src="js/libs/LAB.min.js"></script>
+<script>
+	$LAB
+	.script(function(){
+		if (typeof JSON == "undefined") return "js/libs/json2.min.js";
+	})
+	.script(function(){
+		if (!Modernizr.localstorage) return "js/libs/polyfill-webStorage.js";
+	})
+	.script(function(){
+		if (!Modernizr.mq('(min-width: 0px)')) return "js/libs/respond.min.js";
+	})
+	.script("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+	.wait(function(){
+	    if (typeof jQuery != "function") return "js/libs/jquery-1.7.1.min.js";
+	})
+	//.script("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js").wait()
+	.script("js/plugins.js").wait()
+	.script("js/script.js").wait();
+</script>
+
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>
