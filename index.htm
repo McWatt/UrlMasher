@@ -26,20 +26,19 @@
 <div id="container">
 	<header>
 		<h1>UrlMasher</h1>
-		<p class="tagline">Creates urls for quickly testing multiple domains built on a common code base. <button type="">Read all about it!</button></p>
-	</header>
-	<div id="main" role="main" class="clearfix">
-
-<section id="sectionHelp">
-<h2>About</h2>
-	<h3>Usage:</h3>
+		<p class="tagline">Creates urls for quickly testing multiple domains built on a common code base. <button id="btnHelpToggle" class="btn secondary" type="button">Read all about it!</button></p>
+		
+	<section id="sectionHelp" class="clearfix" style="display:none;">
+	<button id="sectionHelpClose" class="close textlink" type="button">X</button>
+	<p>For questions and feedback, comment on <a href="http://www.erikphipps.com/blog/2012/urlmasher-beta-published/">this blog post</a>.</p>
+	<h2>Usage</h2>
 	<ol>
 		<li>Enter your url domain, subdomain and/or path.</li>
 		<li>Mash them up!</li>
 		<li>Control-click the links.</li>
 		<li>Enjoy your new tabs!</li>
 	</ol>
-	<h3>Under the hood:</h3>
+	<h2>Under the hood</h2>
 	<ul>
 		<li><a title="LABjs" href="http://labjs.com/">LABjs</a> script loader.</li>
 		<li><a title="jQuery" href="http://jquery.com/">jQuery</a>.</li>
@@ -50,38 +49,43 @@
 		<li>LocalStorage</li>
 		<li>CSS managed by Compass</li>
 	</ul>
-	<h3>To do:</h3>
+	<h2>To do</h2>
 	<ul>
 		<li>Refactor localStorage mechanisms (not very DRY).</li>
 		<li>Delete hotspot on mobile too small.</li>
 		<li>Add some exciting help copy.</li>
 	</ul>
 </section>
+		
+	</header>
+	<div id="main" role="main" class="clearfix">
 
-<section id="domainMasher">
+
+
+<section id="domainMasher" class="app">
 	<header>
 		<h1>Build links:</h1>
 	</header>
 	<div id="domainInputCont" class="chunk">
-		<label for="domainInput">Domain: </label><input id="domainInput" class="part-input" type="text" data-validation-error="Please enter a valid domain in this format: 'google.com'" pattern="^\S*\.\S*$" placeholder="google.com" autofocus required />&nbsp;<button id="domainInputButton" type="button">Add!</button>
+		<label for="domainInput">Domain: </label><input id="domainInput" class="part-input" type="text" data-validation-error="Please enter a valid domain in this format: 'google.com'" pattern="^\S*\.\S*$" placeholder="google.com" autofocus required />&nbsp;<button id="domainInputButton" type="button" class="btn">Add!</button>
 		<div class="parts parts-multiple required"></div>
 	</div>
 	
 	<div id="subDomainInputCont" class="chunk">
-		<label for="subDomainInput">Subdomain: </label><input id="subDomainInput" class="part-input" type="text" data-validation-error="Please enter a valid subdomain in this format: 'www'" pattern="^[A-Za-z0-9]+$" placeholder="www" required />&nbsp;<button id="subDomainInputButton" type="button">Add!</button>
+		<label for="subDomainInput">Subdomain: </label><input id="subDomainInput" class="part-input" type="text" data-validation-error="Please enter a valid subdomain in this format: 'www'" pattern="^[A-Za-z0-9]+$" placeholder="www" required />&nbsp;<button id="subDomainInputButton" type="button" class="btn">Add!</button>
 		<div class="parts parts-single required"></div>
 	</div>
 	
 	<div id="pathInputCont" class="chunk">
-		<label for="pathInput">Path: /</label><input id="pathInput" class="part-input" type="text"data-validation-error="Please enter a path." pattern="^(?=\s*\S).*$" placeholder="reader" />&nbsp;<button id="pathInputButton" type="button">Add!</button>
+		<label for="pathInput">Path: /</label><input id="pathInput" class="part-input" type="text"data-validation-error="Please enter a path." pattern="^(?=\s*\S).*$" placeholder="reader" />&nbsp;<button id="pathInputButton" type="button" class="btn">Add!</button>
 		<div class="parts parts-single"></div>
 	</div>
 	<div class="chunk">
-		<button type="button" id="domainMasherUpdate">Mash 'em up!</button>
+		<button type="button" class="btn primary large" id="domainMasherUpdate">Mash 'em up!</button>
 	</div>
 </section>
 
-<section id="domainMasherView">
+<section id="domainMasherView" class="app">
 	<header>
 		<h1>Mashed links:</h1>
 	</header>

@@ -62,13 +62,12 @@ var um = (function () {
 	
 	// collects info from DOM and populates local storage
 	$(hello).bind('partCollector', function(event, parentObj){
-		var $parentObj = $(parentObj);
-		var $id = $parentObj.attr('id');
-
-		var $partLive = $parentObj.find('.parts').find('.part-live');
-		var $partSaved = $parentObj.find('.parts').find('.part-saved');
-		var partLiveArray = [];
-		var partSavedArray = [];
+		var $parentObj = $(parentObj),
+			$id = $parentObj.attr('id'),
+			$partLive = $parentObj.find('.parts').find('.part-live'),
+			$partSaved = $parentObj.find('.parts').find('.part-saved'),
+			partLiveArray = [],
+			partSavedArray = [];
 		
 		$($partLive).each(function(){
 			partLiveArray.push($(this).text());
@@ -203,6 +202,11 @@ var um = (function () {
 	$(function(){
 		
 		//event bindings
+		//help toggle
+		$('#btnHelpToggle, #sectionHelpClose').bind('click', function(){
+			$('#sectionHelp').slideToggle('slow');
+		});
+		
 		//parts
 		$('#domainInputCont, #subDomainInputCont, #pathInputCont').bind('click', function(event){
 					

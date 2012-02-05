@@ -113,7 +113,7 @@ a{
 		}
 	}
 }
-#main > section{
+#main > section.app{
 	width:100%;
 	float:none;
 	padding:.5em;
@@ -143,10 +143,31 @@ a{
 	    width:99%;
 	}
 }
-	&#sectionHelp{
-	    background-color:rgba(0,0,0,0.1);
-	    
+section#sectionHelp{
+	background-color:rgba(255,255,255,0.1);
+	padding:0 1em;
+	margin-bottom:1em;
+	color:white;
+	position:relative;
+	@extend .dark-text-shadow;
+	@include border-radius(6px);
+	@include box-sizing(border-box);
+	a{
+		font-weight:bold;
+		@include link-colors(#fff, #fff, #fff, #fff, #fff);
 	}
+	.close{
+		position:absolute;
+		right:12px;
+		top:12px;
+		font-size:3em;
+		font-weight:bold;
+		color:rgba(255,255,255,0.2);
+	}
+	.close:hover{
+		color:rgba(255,255,255,0.5);
+	}
+}
 
 /* style placeholders */
 ::-webkit-input-placeholder {

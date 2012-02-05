@@ -1,76 +1,304 @@
-/*
-Syntax error: Base-level rules cannot contain the parent-selector-referencing character '&'.
-        on line 146 of C:/files/My Dropbox/My Dropbox/Design/usbwebserver/root/url-masher/sass/custom/_custom.scss
-        from line 10 of C:/files/My Dropbox/My Dropbox/Design/usbwebserver/root/url-masher/sass/screen.scss
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*  HTML5 ? Boilerplate  What follows is the result of much research on cross-browser styling.  Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team.  Detailed information about this CSS: h5bp.com/css  ==|== normalize ========================================================== */
+/* ============================================================================= HTML5 display definitions ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 
-Backtrace:
-C:/files/My Dropbox/My Dropbox/Design/usbwebserver/root/url-masher/sass/custom/_custom.scss:146
-C:/files/My Dropbox/My Dropbox/Design/usbwebserver/root/url-masher/sass/screen.scss:10
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/selector/comma_sequence.rb:30:in `resolve_parent_refs'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:158:in `visit_rule'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:20:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:97:in `block in visit_import'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:97:in `map'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:97:in `visit_import'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:20:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:29:in `block in visit_children'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:42:in `with_parent'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:28:in `visit_children'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:53:in `visit_root'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:20:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:24:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/visitors/cssize.rb:6:in `visit'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/tree/root_node.rb:22:in `render'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/engine.rb:291:in `_render'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/engine.rb:239:in `block in render'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/sass-3.1.4/lib/sass/engine.rb:239:in `render'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:136:in `block (2 levels) in compile'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:122:in `timed'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:135:in `block in compile'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/logger.rb:45:in `red'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:134:in `compile'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:114:in `compile_if_required'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:99:in `block (2 levels) in run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:97:in `each'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:97:in `block in run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:122:in `timed'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/compiler.rb:96:in `run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/commands/watch_project.rb:142:in `recompile'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/commands/watch_project.rb:86:in `perform'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/bin/compass:25:in `block in <top (required)>'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/bin/compass:39:in `call'
-C:/Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/bin/compass:39:in `<top (required)>'
-C:/Ruby192-180/bin/compass:19:in `load'
-C:/Ruby192-180/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 146 of C:/files/My Dropbox/My Dropbox/Design/usbwebserver/root/url-masher/sass/custom/_custom.scss\A         from line 10 of C:/files/My Dropbox/My Dropbox/Design/usbwebserver/root/url-masher/sass/screen.scss"; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+audio:not([controls]) { display: none; }
+
+[hidden] { display: none; }
+
+/* ============================================================================= Base ========================================================================== */
+/* 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units 2. Force vertical scrollbar in non-IE 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g */
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/*  Remove text-shadow in selection highlight: h5bp.com/i These selection declarations have to be separate Also: hot pink! (or customize the background color to match your design) */
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+/* ============================================================================= Links ========================================================================== */
+a { color: #00e; }
+
+a:visited { color: #551a8b; }
+
+a:hover { color: #06e; }
+
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+/* ============================================================================= Typography ========================================================================== */
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* ============================================================================= Lists ========================================================================== */
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+
+dd { margin: 0 0 0 40px; }
+
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+/* ============================================================================= Embedded content ========================================================================== */
+/* 1. Improve image quality when scaled in IE7: h5bp.com/d 2. Remove the gap between images and borders on image containers: h5bp.com/e  */
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/* Correct overflow not hidden in IE9  */
+svg:not(:root) { overflow: hidden; }
+
+/* ============================================================================= Figures ========================================================================== */
+figure { margin: 0; }
+
+/* ============================================================================= Forms ========================================================================== */
+form { margin: 0; }
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*  1. Correct color not inheriting in IE6/7/8/9  2. Correct alignment displayed oddly in IE6/7  */
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/* 1. Correct font-size not inheriting in all browsers 2. Remove margins in FF3/4 S5 Chrome 3. Define consistent vertical alignment display in all browsers */
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/* 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet) 2. Correct inner spacing displayed oddly in IE6/7 */
+button, input { line-height: normal; *overflow: visible; }
+
+/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
+table button, table input { *overflow: auto; }
+
+/* 1. Display hand cursor for clickable form elements 2. Allow styling of clickable form elements in iOS */
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/* Consistent box sizing and appearance */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/*  Remove inner padding and border in FF3/4: h5bp.com/l  */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*  1. Remove default vertical scrollbar in IE6/7/8/9  2. Allow only vertical resizing */
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+/* ============================================================================= Tables ========================================================================== */
+table { border-collapse: collapse; border-spacing: 0; }
+
+td { vertical-align: top; }
+
+/* ==|== primary styles ===================================================== Author:  ========================================================================== */
+body { padding: 1em; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #023a75), color-stop(100%, #034994)); background: -webkit-linear-gradient(bottom, #023a75 0%, #034994 100%); background: -moz-linear-gradient(bottom, #023a75 0%, #034994 100%); background: -o-linear-gradient(bottom, #023a75 0%, #034994 100%); background: -ms-linear-gradient(bottom, #023a75 0%, #034994 100%); background: linear-gradient(bottom, #023a75 0%, #034994 100%); }
+.no-cssgradients body { background-color: #034893; }
+
+footer { color: white; }
+footer a { color: white; text-decoration: none; }
+footer a:visited { color: white; }
+footer a:focus { color: white; }
+footer a:hover { color: white; }
+footer a:active { color: white; }
+footer a:hover { text-decoration: underline; }
+
+a { color: #0000cc; }
+a:visited { color: #cccccc; }
+a:focus { color: #cccc00; }
+a:hover { color: #00cccc; }
+a:active { color: #cc00cc; }
+
+.light-text-shadow, body { text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0; }
+
+.dark-text-shadow, #container > header > .tagline, .parts .part.part-live, section#sectionHelp { text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0; }
+
+.thick-box-shadow, #main > section.app { -moz-box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 0; -o-box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 0; box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 0; }
+
+#container > header > h1 { font-family: 'Sansita One', cursive; font-weight: normal; font-size: 4em; margin: 0; color: #ddd; text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 0, rgba(0, 0, 0, 0.4) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0; }
+
+#container > header > .tagline { margin: 0 0 1em; color: #fff; }
+
+.chunk { margin: .5em; padding: .5em; background-color: #eee; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; }
+.chunk .error-message { padding: 2px; color: #333; background-color: pink; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; margin: 2px; }
+
+.parts { margin: 8px 0 0; }
+.parts .part { padding: 2px 6px 2px 4px; display: inline-block; margin: 2px; background-color: pink; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; position: relative; cursor: pointer; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.5; }
+.parts .part .remove { width: 9px; height: 9px; padding: 2px; display: inline-block; margin: 0 4px 0 0; background-color: grey; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; color: white; line-height: 1; text-align: center; vertical-align: middle; font-size: .66em; }
+.parts .part .remove:hover { background-color: #ac1029; cursor: pointer; text-decoration: none; }
+.parts .part .remove:after { content: 'X'; }
+.parts .part.part-live { background-color: green; color: white; }
+.parts .part.part-saved { background-color: #ccc; }
+.parts .part::selection { background: transparent; }
+.parts .part::-moz-selection { background: transparent; color: inherit; }
+.parts .part::-webkit-selection { background: transparent; }
+
+#main > section.app { width: 100%; float: none; padding: .5em; margin: 0 0 .5em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; background-color: #f7f7f7; }
+#main > section.app > header > h1 { font-family: 'Sansita One', cursive; font-weight: normal; font-size: 2em; margin: 0; color: #ccc; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7); }
+#main > section.app.updated { background-color: #fdfdb8; }
+#main > section.app.updated.fadeout { -moz-transition-property: background-color; -webkit-transition-property: background-color; -o-transition-property: background-color; transition-property: background-color; -moz-transition-duration: 1s; -webkit-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; background-color: #f7f7f7; }
+.ie7 #main > section.app { padding: .5%; width: 99%; }
+
+section#sectionHelp { background-color: rgba(255, 255, 255, 0.1); padding: 0 1em; margin-bottom: 1em; color: white; position: relative; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+section#sectionHelp a { font-weight: bold; color: white; }
+section#sectionHelp a:visited { color: white; }
+section#sectionHelp a:focus { color: white; }
+section#sectionHelp a:hover { color: white; }
+section#sectionHelp a:active { color: white; }
+section#sectionHelp .close { position: absolute; right: 12px; top: 12px; font-size: 3em; font-weight: bold; color: rgba(255, 255, 255, 0.2); }
+section#sectionHelp .close:hover { color: rgba(255, 255, 255, 0.5); }
+
+/* style placeholders */
+::-webkit-input-placeholder { color: #999; }
+
+:-moz-placeholder { color: #999; }
+
+#domainMasherView ul { margin: 0; padding: 0; }
+
+#domainMasherView ul > li { margin: 0; padding: 1em 0; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#domainMasherView ul > li.dummy-links { color: #888; font-style: italic; }
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+
+.clearfix:after { clear: both; }
+
+.clearfix { zoom: 1; }
+
+/* ++Base--Buttons ----- */
+input, textarea, select, button { font: 1em Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: .1em; }
+
+button, input[type="submit"], input[type="radio"], input[type="checkbox"], .btn, .link-primary, .link-secondary { cursor: pointer; }
+
+[disabled="disabled"], .disabled { cursor: default !important; }
+
+.btn, .link-primary, .link-secondary { border: none; font-weight: normal; font-size: 12px; padding: 4px 10px; color: White; text-align: center; display: inline-block; }
+
+.ie7 input.btn, .ie7 button.btn, .ie7 a.btn { overflow: visible; }
+
+.ie7 .link-primary, .ie7 .link-secondary { vertical-align: middle; }
+
+/* link primary colors */
+.btn, .link-primary, .link-primary:link, .link-primary:visited, .link-primary:active { color: #fff; background-color: #034994; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #023a75), color-stop(100%, #034994)); background: -webkit-linear-gradient(bottom, #023a75 0%, #034994 100%); background: -moz-linear-gradient(bottom, #023a75 0%, #034994 100%); background: -o-linear-gradient(bottom, #023a75 0%, #034994 100%); background: -ms-linear-gradient(bottom, #023a75 0%, #034994 100%); background: linear-gradient(bottom, #023a75 0%, #034994 100%); }
+
+.btn:hover, .link-primary:hover { background-color: #4F2A31; text-decoration: underline; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #034994), color-stop(100%, #023a75)); background: -webkit-linear-gradient(bottom, #034994 0%, #023a75 100%); background: -moz-linear-gradient(bottom, #034994 0%, #023a75 100%); background: -o-linear-gradient(bottom, #034994 0%, #023a75 100%); background: -ms-linear-gradient(bottom, #034994 0%, #023a75 100%); background: linear-gradient(bottom, #034994 0%, #023a75 100%); }
+
+/* link secondary */
+.btn.secondary, .link-secondary, .link-secondary:link, .link-secondary:visited, .link-secondary:active { color: #034994; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #dddddd), color-stop(100%, #eeeeee)); background: -webkit-linear-gradient(bottom, #dddddd 0%, #eeeeee 100%); background: -moz-linear-gradient(bottom, #dddddd 0%, #eeeeee 100%); background: -o-linear-gradient(bottom, #dddddd 0%, #eeeeee 100%); background: -ms-linear-gradient(bottom, #dddddd 0%, #eeeeee 100%); background: linear-gradient(bottom, #dddddd 0%, #eeeeee 100%); }
+
+.btn.secondary:hover, .link-secondary:hover { text-decoration: underline; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #eeeeee), color-stop(100%, #dddddd)); background: -webkit-linear-gradient(bottom, #eeeeee 0%, #dddddd 100%); background: -moz-linear-gradient(bottom, #eeeeee 0%, #dddddd 100%); background: -o-linear-gradient(bottom, #eeeeee 0%, #dddddd 100%); background: -ms-linear-gradient(bottom, #eeeeee 0%, #dddddd 100%); background: linear-gradient(bottom, #eeeeee 0%, #dddddd 100%); }
+
+.btn.disabled, .btn.secondary.disabled, .btn[disabled="disabled"], .ie7 .btn[disabled], .btn.secondary[disabled="disabled"], .ie7 .btn.secondary[disabled], .link-primary.disabled, .link-secondary.disabled { background-color: #E7E7E7; color: #bbb; background: -webkit-gradient(linear, left bottom, left top, color-stop(0.28, #e7e7e7), color-stop(0.8, #e7e7e7)); background: -moz-linear-gradient(center bottom, #e7e7e7 28%, #e7e7e7 80%); border: 1px solid #ccc; }
+
+.btn.disabled:hover, .btn[disabled="disabled"]:hover, .ie7 .btn[disabled]:hover, .link-primary.disabled:hover, .link-secondary.disabled:hover { text-decoration: none; }
+
+/* Primary and secondary sizes */
+.btn.small, .link-primary.small, .link-secondary.small { font-size: 10px; }
+
+.btn.large, .link-primary.large, .link-secondary.large { font-size: 16px; font-weight: normal; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; padding: 12px; }
+
+.btn.xlarge, .link-primary.xlarge, .link-secondary.xlarge { font-size: 24px; font-weight: normal; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; padding: 12px 16px; }
+
+.link-primary.wide, .link-secondary.wide, .btn.wide { padding-left: 32px; padding-right: 32px; }
+
+input.textlink, button.textlink { border: none; background: none; display: inline-block; padding: 0; margin: 0; font-weight: normal; font-family: Arial; font-size: 12px; }
+
+button.textlink::-moz-focus-inner { padding: 0; border: 0; }
+
+.ie7 button.textlink { overflow: visible; }
+
+input.textlink:hover, button.textlink:hover, input.textlink:focus, button.textlink:focus { text-decoration: underline; }
+
+input.textlink.disabled, button.textlink.disabled, input.textlink[disabled="disabled"], .ie7 input.textlink[disabled], button.textlink[disabled="disabled"], .ie7 button.textlink[disabled] { color: #999; cursor: default; }
+
+input.textlink.disabled:hover, button.textlink.disabled:hover, input.textlink[disabled="disabled"]:hover, .ie7 input.textlink[disabled]:hover, button.textlink[disabled="disabled"]:hover, button.textlink[disabled]:hover { text-decoration: line-through; }
+
+.ie7 input[type="submit"].textlink { overflow: visible; }
+
+button.disabled { background-color: #ccc; color: #999; border: 1px solid #ccc; cursor: auto; text-decoration: none; outline: none; }
+
+/* ==|== media queries ======================================================
+	PLACEHOLDER Media Queries for Responsive Design.
+	These override the primary ('mobile first') styles
+	Modify as content requires.
+	========================================================================== */
+@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
+@media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */
+  body { padding: 2em; }
+  .chunk { margin: 1em; padding: 1em; background-color: #eee; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; }
+  #main > section.app { width: 49%; float: left; padding: 1em; margin: 0; }
+  #main > section.app:first-child { margin-right: 1%; }
+  #main > section.app:last-child { margin-left: 1%; }
+  .ie7 #main > section.app { padding: 1%; width: 47.3%; }
+  .ie8 #main > section.app { padding: 1%; width: 49.5%; } }
+/* ==|== print styles ======================================================= Print styles. Inlined to avoid required HTTP connection: h5bp.com/r ========================================================================== */
+@media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; } }
