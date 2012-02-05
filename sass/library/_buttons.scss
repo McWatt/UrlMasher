@@ -1,0 +1,137 @@
+/* ++Base--Buttons ----- */
+input, textarea, select, button{
+	font:1em Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	padding:.1em;
+}
+button, input[type="submit"], input[type="radio"], input[type="checkbox"], .btn, .link-primary, .link-secondary{cursor:pointer;}
+[disabled="disabled"],.disabled{cursor:default !important;}
+
+.btn,
+.link-primary,
+.link-secondary{
+	border:none;
+	font-weight:normal;
+	font-size:12px;
+	padding: 4px 10px;
+	color:White;
+	text-align:center;
+	display:inline-block;
+}
+.ie7 input.btn,.ie7 button.btn,.ie7 a.btn{overflow:visible;}
+.ie7 .link-primary,.ie7 .link-secondary{vertical-align:middle;}
+
+/* link primary colors */
+.btn,
+.link-primary,
+.link-primary:link,
+.link-primary:visited,
+.link-primary:active{
+	color:#fff;
+	background-color:#034994;
+	@include border-radius(4px);
+	@include background(linear-gradient(bottom, rgb(2,58,117) 0%, rgb(3,73,148) 100%));
+}
+.btn:hover,
+.link-primary:hover{
+	background-color:#4F2A31;
+	text-decoration:underline;
+	@include background(linear-gradient(bottom, rgb(3,73,148) 0%, rgb(2,58,117) 100%));
+}
+/* link secondary */
+.btn.secondary,
+.link-secondary,
+.link-secondary:link,
+.link-secondary:visited,
+.link-secondary:active{
+	color:#034994;
+	@include border-radius(4px);
+	@include background(linear-gradient(bottom, #ddd 0%, #eee 100%));
+}
+.btn.secondary:hover,
+.link-secondary:hover{
+	text-decoration:underline;
+	@include background(linear-gradient(bottom, #eee 0%, #ddd 100%));
+}
+.btn.disabled,
+.btn.secondary.disabled,
+.btn[disabled="disabled"],.ie7 .btn[disabled],
+.btn.secondary[disabled="disabled"],.ie7 .btn.secondary[disabled],
+.link-primary.disabled,
+.link-secondary.disabled{
+	background-color:#E7E7E7;
+	color:#bbb;
+	background:-webkit-gradient(linear, left bottom, left top, color-stop(0.28, #E7E7E7), color-stop(0.8, #E7E7E7));
+	background:-moz-linear-gradient(center bottom, #E7E7E7 28%, #E7E7E7 80%);
+	border:1px solid #ccc;
+}
+.btn.disabled:hover,
+.btn[disabled="disabled"]:hover,.ie7 .btn[disabled]:hover,
+.link-primary.disabled:hover,
+.link-secondary.disabled:hover{
+	text-decoration:none;
+}
+/* Primary and secondary sizes */
+.btn.small,
+.link-primary.small,
+.link-secondary.small{
+	font-size: 10px;
+}
+.btn.large,
+.link-primary.large,
+.link-secondary.large{
+	font-size: 16px;
+	font-weight:normal;
+	@include border-radius(6px);
+	padding:12px;
+}
+.btn.xlarge,
+.link-primary.xlarge,
+.link-secondary.xlarge{
+	font-size: 24px;
+	font-weight:normal;
+	@include border-radius(6px);
+	padding:12px 16px;
+}
+.link-primary.wide,.link-secondary.wide, .btn.wide{
+	padding-left:32px;
+	padding-right:32px;
+}
+input.textlink,button.textlink{
+	border: none;
+	background: none;
+	display:inline-block;
+	padding:0;
+	margin:0;
+	font-weight:normal;
+	font-family: Arial;
+	font-size:12px;
+}
+button.textlink::-moz-focus-inner{padding: 0;border: 0;}
+.ie7 button.textlink{overflow:visible;}
+input.textlink:hover,button.textlink:hover,input.textlink:focus,button.textlink:focus{
+	text-decoration:underline;
+}
+input.textlink.disabled,
+button.textlink.disabled,
+input.textlink[disabled="disabled"],.ie7 input.textlink[disabled],
+button.textlink[disabled="disabled"],.ie7 button.textlink[disabled]{
+	color:#999;
+	cursor:default;
+}
+input.textlink.disabled:hover,
+button.textlink.disabled:hover,
+input.textlink[disabled="disabled"]:hover,.ie7 input.textlink[disabled]:hover,
+button.textlink[disabled="disabled"]:hover,button.textlink[disabled]:hover{
+	text-decoration:line-through;
+}
+.ie7 input[type="submit"].textlink{overflow:visible;}
+
+button.disabled{
+	background-color: #ccc;
+	color:#999;
+	border:1px solid #ccc;
+	cursor: auto;
+	text-decoration:none;
+	outline:none;
+}
+
