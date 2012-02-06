@@ -2,7 +2,7 @@
 	PLACEHOLDER Media Queries for Responsive Design.
 	These override the primary ('mobile first') styles
 	Modify as content requires.
-	========================================================================== */
+========================================================================== */
 
 @media only screen and (min-width: 480px) {
 	/* Style adjustments for viewports 480px and over go here */
@@ -32,12 +32,12 @@
 			margin-left:1%;
 		}
 		.ie7 &{
-		    padding:1%;
-		    width:47.3%;
+			padding:1%;
+			width:47.3%;
 		}
 		.ie8 &{
-		    padding:1%;
-		    width:49.5%;
+			padding:1%;
+			width:49.5%;
 		}
 	}
 }

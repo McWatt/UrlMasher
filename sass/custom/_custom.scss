@@ -1,12 +1,12 @@
 /* ==|== primary styles =====================================================
-   Author: 
-   ========================================================================== */
+	Author: Erik Phipps
+========================================================================== */
 body{
 	padding:1em;
 	@extend .light-text-shadow;
 	@include background(linear-gradient(bottom, rgb(2,58,117) 0%, rgb(3,73,148) 100%));
 	.no-cssgradients &{
-	    background-color:#034893;
+		background-color:#034893;
 	}
 }
 footer{
@@ -18,7 +18,7 @@ footer{
 }
 
 a{
-  @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0)
+	@include link-colors(#00c, #0cc, #c0c, #ccc, #cc0)
 }
 
 .light-text-shadow{
@@ -49,11 +49,11 @@ a{
 	background-color: #eee;
 	@include border-radius(4px);
 	.error-message{
-	    padding:2px;
-	    color:#333;
-	    background-color:pink;
-	    @include border-radius(3px);
-	    margin:2px;
+		padding:2px;
+		color:#333;
+		background-color:pink;
+		@include border-radius(3px);
+		margin:2px;
 	}
 }
 .parts{
@@ -123,7 +123,7 @@ a{
 	@extend .thick-box-shadow;
 	> header > h1{
 		font-family: 'Sansita One', cursive;
-	    font-weight:normal;
+		font-weight:normal;
 		font-size:2em;
 		margin:0;
 		color:#ccc;
@@ -138,8 +138,8 @@ a{
 		background-color:#f7f7f7;
 	}
 	.ie7 &{
-	    padding:.5%;
-	    width:99%;
+		padding:.5%;
+		width:99%;
 	}
 }
 section#sectionHelp{
@@ -170,11 +170,11 @@ section#sectionHelp{
 
 /* style placeholders */
 ::-webkit-input-placeholder {
-   color: #999;
+	color: #999;
 }
 
 :-moz-placeholder {
-   color: #999;
+	color: #999;
 }
 
 #domainMasherView ul{
@@ -191,7 +191,7 @@ section#sectionHelp{
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	&.dummy-links{
-	    color:#888;
-	    font-style:italic;
+		color:#888;
+		font-style:italic;
 	}
 }
